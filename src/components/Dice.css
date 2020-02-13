@@ -1,0 +1,93 @@
+.dice-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 1px 5px 5px 1px rgba(0, 0, 0, 0.77);
+}
+
+.dice {
+    margin-left: 20px;
+}
+
+.dice h3 {
+    margin: 0px 0px 20px 0px;
+}
+
+.dice input {
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px;
+    box-shadow: 1px 2px 2px 1px #000046;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #fff;
+    background: linear-gradient(to top, #000046, #1cb5e0);
+    outline: none;
+}
+
+.dice input:hover {
+    cursor: pointer;
+    background: linear-gradient(to top, rgba(0, 0, 70, 0.80), rgba(28, 181, 224, 0.80));
+}
+
+.dice input:active {
+    box-shadow: none;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+@media (max-width: 530px) {
+    .dice-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50vh;
+        margin: 10px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .results {
+        text-align: center;
+    }
+
+    .dice-value100 {
+        font-size: 0.5em;
+        margin-top: 50px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .critical100 {
+        font-size: 0.3em;
+        margin-left: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 440px) {
+    .dice-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40vh;
+        margin: 10px;
+    }
+}
